@@ -1,0 +1,237 @@
+.allc{
+    margin:30px 5%;
+}
+
+html{
+    width: 100%;
+     height: 100%;
+  background: radial-gradient(#9ed1f6d6, #babed7), linear-gradient(to top,#3b50b7c7, #395dc3);
+}
+
+#vout{
+    margin-top: 110px;
+    width: 100%;
+}
+
+.demo1{
+    text-align: center;
+    text-align: center;
+    position: absolute;
+      top: 49%;
+    left: 64%;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+#turns, #frequency, #voltage, #displacement{
+    float: right;
+    
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.slidecontainer {
+    width: 100%;
+  }
+
+  #myRange{
+    margin: auto;
+    appearance: none;
+}
+
+#myRange {
+    appearance: none;
+      padding: 30px 5px;
+    position: absolute;
+    width: 30%;
+    top: 41%;
+    left: 50%;
+    z-index: 3;
+    box-shadow: 0px 0px 20px 0px inset #333333c4;
+}
+
+#myRange::-webkit-slider-thumb {
+    appearance: none;
+    border-radius: 0px;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 20px 20px inset #403333;
+    opacity: 0.7;
+}
+
+img{
+  
+box-shadow: 3px 5px 10px 0px #738bb0, 3px 5px 20px 0px darkslategrey;
+   
+}
+   #instrument p {
+     margin-left: -50px;
+    margin-bottom: 1rem;
+        border: 10px solid #2a2a2e;
+    color: floralwhite;
+    text-shadow: 0px 0px 5px black;
+    padding: 20px;
+      background: linear-gradient(to top,#d9dee4, #b2b9cd, #9eb5cd, #797c84);
+    text-align: start;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+ #instrument{
+   position: absolute;
+    transform: scaleY(1.3);
+    top: 10%;
+
+   } 
+  .slider {
+      margin-left: 8%;
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+
+  canvas{
+    width: 130vh !important;
+    height: 40vh !important;
+
+  }
+  
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+ #myChart{
+   
+        position: absolute;
+   left: 27%;
+    top: 30%;
+    transform: translate(10vh,27vh) scale(1);
+    z-index: 3;
+
+}
+
+.button{
+    position: absolute;
+    top: 0%;
+    margin-left: 5vh;
+}
+
+#div2{
+    color: red;
+    position: absolute;
+    left: 35%;
+    top: 64%;
+        z-index: 3;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: white;
+      border-radius: 5px;
+    border-radius: 2px solid black;
+}
+
+ h5{
+    position: absolute;
+    top: 53%;
+    background:  #ccc;
+
+    padding: 5px;
+        z-index: 3;
+       border-radius: 5px;
+    font-size: x-large;
+    left: 35%;
+    box-shadow: 0px 0px 10px 0px inset black;
+}
+ .graph {
+    position: absolute;
+ top: 31vh;
+    transform: scale(1.5);
+    background: #3a9249;
+    text-shadow: -2px 0px 2px white;
+    padding: 0px 10px;
+    z-index: 2;
+    left: 143vh;
+    box-shadow: 0px 0px 10px 0px inset black;
+}
+
+.head{
+    position: absolute;
+    top: -2%;
+    left: 6%;
+    border: 5px solid #d3d3d3;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 10px inset slategray;
+    background: white;
+    z-index: 2;
+ }
+
+#back{
+   width: 100%; 
+    height: 100%; 
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    left: 47%;
+}
+#front{
+   width: 60%; 
+    height: 50%; 
+    position: absolute;
+    top: -10%;
+    z-index: 1;
+    left: 44%;
+    transform: translate(10vh, -2vh) scale(1.3);
+}
+#svg_44{
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+   
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    width: 20vh;
+    color: #434346;
+    text-shadow: 0px 0px 10px white;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+#vout {
+    margin-top: -13%;
+    transform: translate(-13vh, 3vh);
+    width: 50%;
+    color: #1f1b1b;
+    box-shadow: 0px 0px 30px 0px inset #ccc;
+}
+
+svg g{
+    box-shadow: 0px 20px 100px 0px black;
+   
+}
