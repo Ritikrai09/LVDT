@@ -57,13 +57,13 @@ html{
 }
 
 .switching::after{
-    content: 'Switch';
+  content: 'Switch ON';
     width: 24px;
     height: 40px;
    font-size: 18px;
     position: absolute;
     left: -3.7vh;
-    top: 7.5vh;
+    top: 7.9vh;
 }
 @keyframes indicate {
  
