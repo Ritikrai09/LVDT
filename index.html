@@ -53,7 +53,7 @@
                 </div>
                 
                 <div class="container">
-                 <canvas id="myChart" width="506" height="73"></canvas>
+                 <canvas id="myChart" width="1876" height="383"></canvas>
             </div>
             
             </div>
@@ -71,7 +71,7 @@
                             <input type="range" min="-250" max="250" value="0" class="slider" id="myRange">
                             
                             <p class="demo1" style="
-          margin-top: -6%;
+          margin-top: -5.5%;
     margin-left: -16.5%;">
                                <span id="demo" style="
     margin-left: 34.5vh;
@@ -98,7 +98,7 @@
       padding: 0px 10px;
       color: ghostwhite;
       background: cornflowerblue;
-    ">Vcc:</b>                 <input id="vout" type="text" disabled="true" onchange="slide()"><br>
+    ">Vout:</b>                 <input id="vout" type="text" disabled="true" onchange="slide()"><br>
                                 </td>
                             </tr>
                         </table>
@@ -195,8 +195,35 @@
 ">V<sub>out</sub></button>
                             </div>
                         </form>
-                        <h5><u>Selected Values</u></h5>
-                   <div id="div2" style='color:red;'></div>
+                   <div id="div2" style='color:black;'>
+    <table id='output'>
+     <thead>
+   
+   <tr>
+ 
+   <th colspan="3" style="background-color: #525480;">Selected Values
+
+   </th>
+ </tr>
+
+ </thead>
+
+ <tbody>
+
+ <tr colspan='1' class='adding'>
+ <td>Vout</td>
+<td>Displacement</td>
+</tr>
+
+<tbody>
+
+</table>
+
+ <div class='arrow'>↓</div>
+  <div class='arrow arrow1'>&#8593</div>
+   <div class='arrow arrow2'>&#8593</div>
+  <div class='switching'></div>
+                   </div>
                     </div>
                 </div>
             </div>
@@ -256,7 +283,7 @@
 
 
   <path stroke="#000000" transform="rotate(88.92388916015625 357.9019775390625,227.59671020507812) " id="svg_5" d="m365.15259,157.95603c0,19.23074 -3.24621,34.82034 -7.25061,34.82034m7.25061,-34.82034l0,0c0,19.23074 -3.24621,34.82034 -7.25061,34.82034c-4.0044,0 -7.25061,-15.58957 -7.25061,-34.82034m0,0l0,0c0,-19.23072 3.24621,-34.82033 7.25061,-34.82033c4.0044,0 7.25061,15.58961 7.25061,34.82033l0,139.28141c0,19.23072 -3.24621,34.82028 -7.25061,34.82028c-4.0044,0 -7.25061,-15.58956 -7.25061,-34.82028l0,-139.28141z" stroke-width="0" fill="#898585"/>
-  
+
 
   <path stroke="#000000" transform="rotate(89.6352767944336 282.1059265136719,226.01145935058594) " id="svg_44" d="m325.1831,170.02673c0,15.45975 -19.2863,27.99238 -43.07718,27.99238m43.07718,-27.99238l0,0c0,15.45975 -19.2863,27.99238 -43.07718,27.99238c-23.79085,0 -43.07716,-12.5326 -43.07716,-27.99238m0,0l0,0c0,-15.45974 19.2863,-27.99236 43.07716,-27.99236c23.79086,0 43.07718,12.53262 43.07718,27.99236l0,111.96954c0,15.45974 -19.2863,27.99232 -43.07718,27.99232c-23.79085,0 -43.07716,-12.53258 -43.07716,-27.99232l0,-111.96954z" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" stroke-width="0" fill="url(#svg_46)"/>
 
@@ -277,6 +304,28 @@
   <ellipse stroke="#f2eded" opacity="0.6" id="svg_32" ry="75.11656" rx="25" cy="218.41104" cx="399" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" fill="none"/>
   <ellipse stroke="#f2eded" opacity="0.6" id="svg_33" ry="76.14314" rx="25" cy="218.82414" cx="425" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" fill="none"/>
   <ellipse stroke="#f2eded" id="svg_35" opacity="0.6" ry="75.73006" rx="25" cy="218.79674" cx="442.66667" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" fill="none"/>
+  <g stroke="null" style="vector-effect: non-scaling-stroke;" id="svg_61"/>
+  <g id="svg_56">
+   <line stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="none" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="327.09998" y1="69" x2="224.1" y2="69" id="svg_48"/>
+   <line stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="none" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="222.64998" y1="68.00068" x2="222.64998" y2="142.95138" id="svg_47" transform="rotate(0.9469528794288635 222.64997863769543,105.47602844238209) "/>
+   <rect stroke="#000000" style="vector-effect: non-scaling-stroke;" fill="#bfbfbf" x="242.6" y="39" width="60" height="44" id="svg_12"/>
+   <rect stroke="#000000" style="vector-effect: non-scaling-stroke;" fill="#3f3f3f" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="251.6" y="27" width="14" height="12" id="svg_34"/>
+   <rect stroke="#000000" style="vector-effect: non-scaling-stroke;" fill="#3f3f3f" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="282.6" y="28" width="14" height="12" id="svg_36"/>
+   <text stroke="#005fbf" style="vector-effect: non-scaling-stroke;" transform="matrix(0.8505836725234984,0,0,0.8149397373199463,26.16653434932232,20.136869832873344) " fill="#040a11" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="260.26148" y="102.22708" id="svg_41" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve">A C</text>
+   <line stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="none" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="327.6" y1="68" x2="327.6" y2="142" id="svg_50"/>
+   <ellipse stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="#ffff56" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="225.6" cy="67" id="svg_13" rx="5" ry="5"/>
+
+   <ellipse stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="#f2f280" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="323.6" cy="69" rx="5" ry="5" id="svg_51"/>
+
+
+   <rect stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="#444" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="133.60013" y="31" width="32" height="59" id="svg_52"/>
+
+   <rect stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="#777" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="136.6" y="45" width="22" height="37" id="svg_53"/>
+   <rect stroke="#005fbf" style="vector-effect: non-scaling-stroke;" fill="none" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="141.59999" y="47" width="18" height="30" id="svg_55"/>
+   <line stroke="#005fbf" style="vector-effect: non-scaling-stroke;" transform="rotate(-1.2188900709152222 204.58981323242224,51.0214843749993) " fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="165.59173" y1="50.52148" x2="243.5879" y2="51.52148" id="svg_57" stroke-width="4"/>
+   <ellipse stroke="#000000" style="vector-effect: non-scaling-stroke;" ry="14" rx="16" id="svg_49" cy="65" cx="272.6" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffaa"/>
+   <text stroke="#000000" transform="matrix(1.6605504751205444,0,0,1.1233735084533691,-94.93348859623075,-6.957109250128269) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_60" y="69.42771" x="220.90939" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">~</text>
+  </g>
  </g>
 </svg>
 
