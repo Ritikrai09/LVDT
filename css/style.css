@@ -5,6 +5,9 @@
 html{
     width: 100%;
      height: 100%;
+
+    box-shadow: 0px 0px 80px 0px inset #03071b;
+
   background: radial-gradient(#9ed1f6d6, #babed7), linear-gradient(to top,#3b50b7c7, #395dc3);
 }
 
@@ -13,11 +16,91 @@ html{
     width: 100%;
 }
 
+.arrow {
+    width: 10%;
+    transform: scale(3.5,5.4);
+  color: #d1d95a;
+    text-shadow: 0px 2px 2px #4e4545;
+    position: absolute;
+    top: -28vh;
+    left: 65vh;
+    z-index: 5;
+    font-weight: bold;
+    display: none;
+    animation: indicate 1s ease-in-out infinite forwards;
+}
+.arrow1{
+    top: -28vh;
+    left: 91vh;
+ color: #5fde74;
+     transform: scale(3.6);
+     display: block;
+      animation: indicate1 1s ease-in-out infinite forwards;
+}
+.arrow2{
+    top: -28vh;
+    left: 35vh;
+     color:#5fde74;
+    transform: scale(3.6);
+     display: block;
+     animation: indicate1 1s ease-in-out infinite forwards;
+}
+
+.switching{
+    width: 24px;
+    height: 40px;
+    background: cornsilk;
+    position: absolute;
+    left: 39vh;
+    top: -54.5vh;
+    box-shadow: 2px 4px 10px 0px black;
+}
+
+.switching::after{
+    content: 'Switch';
+    width: 24px;
+    height: 40px;
+   font-size: 18px;
+    position: absolute;
+    left: -3.7vh;
+    top: 7.5vh;
+}
+@keyframes indicate {
+ 
+  50% {
+    transform: translateY(-5.5vh) scale(3.6);
+  }
+}
+@keyframes indicate1 {
+ 
+  50% {
+    transform: translateY(-4.5vh) scale(3.6);
+  }
+}
+
+#output{
+    width: 40%;
+    padding-left: 1%;
+    line-height: 2;
+        box-shadow: 0px 0px 2px 0px #555;
+    background: #bbb;
+    transform: scale(1.3, 1);
+    border: 2px solid slategray;
+}
+
+#output td{
+    width: 5%;
+line-height: 2;
+    color: #3b1b01;
+    text-shadow: -1px 0px 2px #edf2ff;
+ border: 2px solid slategray;
+}
+
 .demo1{
     text-align: center;
     text-align: center;
     position: absolute;
-      top: 49%;
+      top: 46%;
     left: 64%;
     z-index: 2;
     margin-bottom: 20px;
@@ -43,10 +126,10 @@ html{
 
 #myRange {
     appearance: none;
-      padding: 30px 5px;
+      padding: 15px 5px;
     position: absolute;
     width: 30%;
-    top: 41%;
+    top: 46%;
     left: 50%;
     z-index: 3;
     box-shadow: 0px 0px 20px 0px inset #333333c4;
@@ -57,7 +140,7 @@ html{
     border-radius: 0px;
     padding: 30px 0px;
     box-shadow: 0px 0px 20px 20px inset #403333;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 img{
@@ -65,14 +148,55 @@ img{
 box-shadow: 3px 5px 10px 0px #738bb0, 3px 5px 20px 0px darkslategrey;
    
 }
+#svg_51{
+  
+transform: translate(-5vh,0vh);
+opacity: 0.3;
+display: none;
+animation: current2 2s linear infinite forwards;
+   
+}
+#svg_13{
+  
+transform: translate(-0.8vh,11vh);
+animation: current1 2s linear infinite forwards;
+position: absolute;
+display: none;
+z-index: -1;
+   
+}
+@keyframes current1 {
+
+50% {
+     transform: translate(-0.8vh,0vh);
+        opacity: 0.9;
+  }
+100% {
+    transform: translate(4vh,0vh);
+    opacity: 0.5;
+  }
+}
+
+@keyframes current2 {
+50% {
+    transform: translate(1vh,0vh);
+    opacity: 1;
+  }
+100% {
+    transform: translate(1vh,11vh);
+        opacity: 0.7;
+  }
+}
+
+
    #instrument p {
      margin-left: -50px;
     margin-bottom: 1rem;
-        border: 10px solid #2a2a2e;
+    border: 10px solid #2a2a2e;
     color: floralwhite;
     text-shadow: 0px 0px 5px black;
     padding: 20px;
-      background: linear-gradient(to top,#d9dee4, #b2b9cd, #9eb5cd, #797c84);
+    background: linear-gradient(to top,#d9dee4, #b2b9cd, #9eb5cd, #797c84);
     text-align: start;
     border-radius: 5px;
     font-weight: bold;
@@ -128,10 +252,14 @@ box-shadow: 3px 5px 10px 0px #738bb0, 3px 5px 20px 0px darkslategrey;
 
  #myChart{
    
-        position: absolute;
-   left: 27%;
+    display: none;
+    position: absolute;
+   left: 37%;
     top: 30%;
-    transform: translate(10vh,27vh) scale(1);
+    font-size: 20px;
+    padding-left:20px ;
+    background: linear-gradient(to top, black, white);
+    transform: translate(10vh,27vh) scale(0.8,0.9);
     z-index: 3;
 
 }
@@ -145,40 +273,38 @@ box-shadow: 3px 5px 10px 0px #738bb0, 3px 5px 20px 0px darkslategrey;
 #div2{
     color: red;
     position: absolute;
-    left: 35%;
-    top: 64%;
+    left: 33%;
+    top: 57%;
+
+        width: 12%;
         z-index: 3;
     font-size: 16px;
     font-weight: bold;
     border-radius: 3px;
-    background: white;
-      border-radius: 5px;
     border-radius: 2px solid black;
 }
 
  h5{
     position: absolute;
-    top: 53%;
+    top: 54%;
     background:  #ccc;
-
     padding: 5px;
         z-index: 3;
        border-radius: 5px;
     font-size: x-large;
     left: 35%;
-    box-shadow: 0px 0px 10px 0px inset black;
+    box-shadow: 0px 0px 10px 0px black;
 }
  .graph {
     position: absolute;
  top: 31vh;
     transform: scale(1.5);
-    background: #3a9249;
+ background: #85e696;
     text-shadow: -2px 0px 2px white;
     padding: 0px 10px;
     z-index: 2;
     left: 143vh;
-    box-shadow: 0px 0px 10px 0px inset black;
-}
+    box-shadow: 0px 0px 10px 0px inset #229936;}
 
 .head{
     position: absolute;
@@ -206,7 +332,7 @@ box-shadow: 3px 5px 10px 0px #738bb0, 3px 5px 20px 0px darkslategrey;
     top: -10%;
     z-index: 1;
     left: 44%;
-    transform: translate(10vh, -2vh) scale(1.3);
+    transform: translate(10vh, 10vh) scale(1.3);
 }
 #svg_44{
     left: 0px;
@@ -225,7 +351,7 @@ label {
 }
 #vout {
     margin-top: -13%;
-    transform: translate(-13vh, 3vh);
+    transform: translate(-11vh, 2vh);
     width: 50%;
     color: #1f1b1b;
     box-shadow: 0px 0px 30px 0px inset #ccc;
